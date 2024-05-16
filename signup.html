@@ -35,24 +35,24 @@
         </div>
     </div>
     <script>
-        let singupBtn = document.getElementById("signupBtn");
-        let singinBtn = document.getElementById("signinBtn");
+        let signupBtn = document.getElementById("signupBtn");
+        let signinBtn = document.getElementById("signinBtn");
         let nameField = document.getElementById("nameField");
         let title = document.getElementById("title");
 
-        singinBtn.onclick = function(){
+        signinBtn.onclick = function(){
             nameField.style.maxHeight = "0";
             title.innerHTML = "Sign In";
-            singupBtn.classList.add("disable");
-            singupBtn.classList.remove("disable");
+            signupBtn.classList.add("disable");
+            signinBtn.classList.remove("disable");
         }
 
         
-        singupBtn.onclick = function(){
+        signupBtn.onclick = function(){
             nameField.style.maxHeight = "60px";
             title.innerHTML = "Sign Up";
-            singupBtn.classList.remove("disable");
-            singupBtn.classList.add("disable");
+            signupBtn.classList.remove("disable");
+            signinBtn.classList.add("disable");
         }
     </script>
 </body>
