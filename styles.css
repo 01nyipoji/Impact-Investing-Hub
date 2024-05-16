@@ -11,7 +11,7 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    background-color: #333;
+    background-color:  #008080;
     color: #fff;
     padding: 10px 0;
 }
@@ -119,7 +119,7 @@ span{
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #008080;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -153,7 +153,9 @@ footer {
     border-radius: 8px;
 }
 
-
+.card h3{
+    margin-bottom: 20px;
+}
 .card p {
     margin-bottom: 20px;
 }
