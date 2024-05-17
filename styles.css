@@ -1,183 +1,139 @@
-
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2 {
+    margin: 0;
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color:  #008080;
-    color: #fff;
-    padding: 10px 0;
-}
-
-.navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color:  #008080;
+    color: white;
+    padding: 10px 20px;
 }
 
-.navbar .logo {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.navbar .nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.navbar .nav-links li {
-    margin-right: 20px;
-}
-
-.navbar .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Sections */
-.section {
-    padding: 50px 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* start section 1 */
-.section-1{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.section-1-col-1{
-    font-size: 4.375rem;
-    position: absolute;
-    top: 35%;
-    left: 2%;
-    line-height: 150px;
-}
-
-.section-1-col-2{
-    position: relative;
-    left: 63%;
-}
-span{
-    color: #008080;
-}
-
-
-.logo{
+.logo {
     width: 100px;
 }
 
-.section-1-col-2 img{
-    width: 100%;
-    animation: fadeInFromTop .5s linear forwards, floating ease 4s infinite ;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
-@keyframes fadeInFromTop{
-    from{
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
+.nav-links li {
+    display: inline;
 }
 
-@keyframes floating{
-    0%{
-        transform: translate(0%, 0%) rotate(360deg);
-    }
-    25%{
-        transform: translate(5%, 15%) rotate(360deg);
-    }
-    50%{
-        transform: translate(10%, 5%) rotate(360deg);
-    }
-    75%{
-        transform: translate(0%, 15%) rotate(360deg);
-    }
-    100%{
-        transform: translate(0%, 0%) rotate(360deg);
-    }
+.nav-links a {
+    color: white;
+    padding: 8px 12px;
 }
-/* end of section 1 */
 
-
-/* Footer */
-footer {
+.signup {
     background-color: #008080;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    border-radius: 5px;
+    border: solid 1px white;
 }
 
-.social-icons {
+/* First Section */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-image {
+    flex: 1;
     display: flex;
     justify-content: center;
 }
 
-.social-icons a {
-    margin: 0 10px;
-    color: #fff;
+.intro-image img {
+    max-width: 100%;
+    height: auto;
 }
 
-
-
-
-/* Styles for the card section */
-.card-container {
+/* Second Section */
+.info {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    padding: 50px 20px;
+    gap: 20px;
+    background-color: #fff;
 }
 
 .card {
-    width: calc(50% - 20px); 
-    margin-bottom: 20px;
+    flex: 1;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
-.card h3{
-    margin-bottom: 20px;
-}
-.card p {
-    margin-bottom: 20px;
+/* Third Section */
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    gap: 20px;
+    background-color: #fff;
 }
 
-.card button {
+.actions .card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color:  #008080;
+    color: white;
     padding: 10px 20px;
-    background-color: #008080;
-    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-.card button:hover {
-    background-color: #005959;
+button:hover {
+    background-color:  #008080;
 }
 
-
-@media only screen and (max-width: 800px){
-    .card-container{
-        display: block;
-    }
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color:  #008080;
+    color: white;
+    text-align: center;
 }
-    
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+}
